@@ -68,6 +68,13 @@ body {
   padding-right: 20px !important;
 }
 /* MARCELO --------------------------------------------- */
+#mark_aux {
+  background-image: url("../img/mark_aux.png");
+  right:18px;
+  position:absolute;
+  height:80px;
+  width:40px;
+}
 .container.no-bg {
   background: none !important;
   -moz-box-shadow: none;
@@ -154,9 +161,11 @@ body {
   position: relative;
   height: 125px;
 }
+/* MARCELO --------------------------------------------- */
 #header.container {
   background-color: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+  border-bottom: 5px solid #F2BC57;
   height: 85px;
   position: relative;
 }
@@ -170,7 +179,14 @@ body {
   display: block;
   position: relative;
   z-index: 20;
+  color: #5E888C;
 }
+.logo a div {
+  line-height:1.2em !important;
+  float: left;
+  margin: 12px 0 0 6px;
+}
+/* ------------------------------------------------------ */
 p.site-slogan {
   color: #b1a5bd;
   font-size: 11px;

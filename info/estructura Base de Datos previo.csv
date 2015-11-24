@@ -1,0 +1,112 @@
+cod_Area;AREA;cod_Especialidad;Especialidad
+18;Agropecuaria;1;Apicultura
+18;Agropecuaria;2;Avicultura
+18;Agropecuaria;3;Bovinocultura
+18;Agropecuaria;4;Cavicultura
+18;Agropecuaria;5;Cunicultura
+18;Agropecuaria;6;Floricultura
+18;Agropecuaria;7;Fruticultura
+18;Agropecuaria;8;Horticultura
+18;Agropecuaria;9;Lombricultura
+18;Agropecuaria;10;Ovinocultura
+18;Agropecuaria;11;Piscicultura
+18;Agropecuaria;12;Porcinocultura
+18;Agropecuaria;13;Producción de quinua 
+18;Agropecuaria;14;Viticultura
+18;Agropecuaria;15;Agroecología
+18;Agropecuaria;16;Agroforestería
+18;Agropecuaria;17;Agropecuaria 
+18;Agropecuaria;18;Veterinaria
+18;Agropecuaria;19;Zootecnia Guarda parques 
+18;Agropecuaria;20;Sistema Agroforestal
+18;Agropecuaria;21;Agricola
+18;Agropecuaria;22;Pecuaria
+18;Agropecuaria;23;Producción de Goma Nativa
+18;Agropecuaria;24;Medio Ambiente
+19;Industrial;1;Carpintería Industrial
+19;Industrial;2;Mecanica Industrial
+19;Industrial;3;Metal Mecanica
+19;Industrial;4;Fundición
+19;Industrial;5;Mecatrónica
+19;Industrial;6;Energías Alternativas
+19;Industrial;7;Confección Textil
+19;Industrial;8;Sastrería
+19;Industrial;9;Tejido Industrial
+19;Industrial;10;Serigrafía
+19;Industrial;11;Construcción de Viviendas
+19;Industrial;12;Instalaciones Sanitarias
+19;Industrial;13;Instalacion de Gas Domiciliario
+19;Industrial;14;Topografía
+19;Industrial;15;Transformación de Alimentos
+19;Industrial;16;Confección de Ropa Típica
+19;Industrial;17;Electromecánica
+19;Industrial;19;Construccion Civil
+19;Industrial;20;Electricidad Industrial
+19;Industrial;21;Encofrado
+20;Artes;1;Alfarería  
+20;Artes;2;Telares Artesanales
+20;Artes;3;Bordado Artesanal
+20;Artes;4;Cestería  
+20;Artes;5;Coreoplastia
+20;Artes;6;Danza 
+20;Artes;7;Decoración de interiores 
+20;Artes;8;Floristería
+20;Artes;9;Joyería 
+20;Artes;10;Juguetería y cotillón
+20;Artes;11;Tejido Artesanal
+20;Artes;12;Marquetería
+20;Artes;13;Marroquenería
+20;Artes;14;Pintura 
+20;Artes;15;Artesanía
+20;Artes;16;Talabartería
+20;Artes;17;Teatro 
+20;Artes;18;Tallado de Madera
+20;Artes;19;Zapatería
+20;Artes;20;Artes musicales 
+20;Artes;21;Artes  gráficas
+21;Turismo;1;Turismo Comunitario
+21;Turismo;2;Hoteleria
+21;Turismo;3;Transporte Turistico
+21;Turismo;5;Gestion Turistica
+22;Servicio;1;Gastronomía y Alimentación
+22;Servicio;2;Belleza Integral
+22;Servicio;3;Sistemas Computacionales
+22;Servicio;4;Diseño Grafico
+22;Servicio;5;Electricidad e Instalaciones
+22;Servicio;6;Refrigeracion
+22;Servicio;7;Electronica
+22;Servicio;8;Electrotécnia
+22;Servicio;9;Mecanica Automotriz
+22;Servicio;10;Mecanica de Motocicletas
+22;Servicio;11;Idioma Guaraní 
+22;Servicio;12;Idioma Ingles 
+22;Servicio;13;Idioma Quechua 
+22;Servicio;14;Idioma Aymara
+22;Servicio;15;Mantenimiento de Celulares
+22;Servicio;16;Jardineria
+22;Servicio;17;Comunicador Popular
+22;Servicio;18;Parvularia
+22;Servicio;19;Procurador Legal de Derecho
+22;Servicio;20;Sistemas Informaticos
+22;Servicio;21;Ensamblaje y mantenimiento de computadoras
+22;Servicio;22;Informatica Industrial
+22;Servicio;23;Reposteria
+23;Comercial;1;Gestión Municipal
+23;Comercial;2;Marketing
+23;Comercial;3;Contabilidad
+23;Comercial;4;Gestión Administrativa
+23;Comercial;5;Secretariado ejecutivo
+23;Comercial;6;Emprendimientos Comunitarios
+23;Comercial;7;Pequeña y Mediana Empresa
+23;Comercial;8;Desarrollo Comunitario y Genero
+23;Comercial;9;Gestion y Organización de Eventos
+24;Deportes;1;Arbitraje Deportivo
+24;Deportes;2;Entrenador de Práctica Deportiva
+24;Deportes;3;Salud Deportiva
+24;Deportes;4;Gestión Deportiva 
+25;Salud;1;Prótesis Dental
+25;Salud;2;Fisioterapia
+25;Salud;3;Medicina tradicional
+25;Salud;4;Salud Comunitaria
+25;Salud;5;Primeros Auxilios
+25;Salud;6;Laboratorio Clínico

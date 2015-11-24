@@ -127,8 +127,10 @@ $(function () {
 // });
 
 $(window).load(function(){
-  $("#hornav").sticky({ topSpacing: 65 });
+//  $("#hornav").sticky({ topSpacing: 65 });
+  $("#hornav").sticky({ topSpacing: 85 });
 });
 $(window).load(function(){
-  $("#header").sticky({ topSpacing: -20 });
+//  $("#header").sticky({ topSpacing: -20 });
+  $("#header").sticky({ topSpacing: 0 });
 });

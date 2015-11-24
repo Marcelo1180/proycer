@@ -4,16 +4,40 @@ from geoposition.fields import GeopositionField
 class Area(models.Model):
     area = models.CharField(max_length=50)
 
+    def __str__(self):
+		return self.area
+
+    def __unicode__(self):
+        return self.area
+
 class Especialidad(models.Model):
     area = models.ForeignKey(Area)
     especialidad = models.CharField(max_length=50)
 
+    def __str__(self):
+		return "%s - %s" % (self.area, self.especialidad)
+
+    def __unicode__(self):
+        return "%s - %s" % (self.area, self.especialidad)
+
 class Nivel(models.Model):
     nivel = models.CharField(max_length=50)
+
+    def __str__(self):
+		return self.nivel
+
+    def __unicode__(self):
+        return self.nivel
 
 class Etapa(models.Model):
     nivel = models.ForeignKey(Nivel)
     etapa = models.CharField(max_length=50)
+
+    def __str__(self):
+		return  "%s - %s" % (self.nivel, self.etapa)
+
+    def __unicode__(self):
+        return  "%s - %s" % (self.nivel, self.etapa)
 
 class Director(models.Model):
     nombres = models.CharField(max_length=70)
@@ -34,6 +58,12 @@ class Contacto(models.Model):
 
 class Cosude(models.Model):
     cosude = models.CharField(max_length=10)
+
+    def __str__(self):
+		return  self.cosude
+
+    def __unicode__(self):
+        return  self.cosude
 
 DEPENDENCIA_CHOICE = (
     ('F', 'Fiscal'),
