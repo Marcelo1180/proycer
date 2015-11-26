@@ -1,5 +1,76 @@
 from django.db import models
 from geoposition.fields import GeopositionField
+from smart_selects.db_fields import ChainedForeignKey, GroupedForeignKey
+from django.contrib.auth.models import User
+
+class Departamento(models.Model):
+    departamento = models.CharField(max_length=50)
+
+    def __str__(self):
+		return self.departamento
+
+    def __unicode__(self):
+        return self.departamento
+
+class Provincia(models.Model):
+    departamento = models.ForeignKey(Departamento)
+    provincia = models.CharField(max_length=150)
+
+    def __str__(self):
+		return self.provincia
+
+    def __unicode__(self):
+        return self.provincia
+
+class Seccion(models.Model):
+    departamento = models.ForeignKey(Departamento)
+    provincia = ChainedForeignKey(Provincia, chained_field="departamento", chained_model_field="departamento")
+    seccion = models.CharField(max_length=150)
+
+    def __str__(self):
+		return self.seccion
+
+    def __unicode__(self):
+        return self.seccion
+
+class Canton(models.Model):
+    departamento = models.ForeignKey(Departamento)
+    provincia = ChainedForeignKey(Provincia, chained_field="departamento", chained_model_field="departamento")
+    seccion = ChainedForeignKey(Seccion, chained_field="provincia", chained_model_field="provincia")
+    canton = models.CharField(max_length=150)
+
+    def __str__(self):
+		return self.canton
+
+    def __unicode__(self):
+        return self.canton
+
+class Localidad(models.Model):
+    departamento = models.ForeignKey(Departamento)
+    provincia = ChainedForeignKey(Provincia, chained_field="departamento", chained_model_field="departamento")
+    seccion = ChainedForeignKey(Seccion, chained_field="provincia", chained_model_field="provincia")
+    canton = ChainedForeignKey(Canton, chained_field="canton", chained_model_field="canton")
+    localidad = models.CharField(max_length=150)
+
+    def __str__(self):
+		return self.localidad
+
+    def __unicode__(self):
+        return self.localidad
+
+class Distrito(models.Model):
+    departamento = models.ForeignKey(Departamento)
+    provincia = ChainedForeignKey(Provincia, chained_field="departamento", chained_model_field="departamento")
+    seccion = ChainedForeignKey(Seccion, chained_field="provincia", chained_model_field="provincia")
+    canton = ChainedForeignKey(Canton, chained_field="canton", chained_model_field="canton")
+    localidad = ChainedForeignKey(Localidad, chained_field="localidad", chained_model_field="localidad")
+    distrito = models.CharField(max_length=150)
+
+    def __str__(self):
+		return self.distrito
+
+    def __unicode__(self):
+        return self.distrito
 
 class Area(models.Model):
     area = models.CharField(max_length=50)
@@ -78,6 +149,7 @@ BOOL_CHOICES = (
     (True, 'Si'),
     (False, 'No')
 )
+
 class UEducativa(models.Model):
     cosude = models.ForeignKey(Cosude)
     codigo = models.CharField(max_length=10)
@@ -111,3 +183,5 @@ class UEducativa(models.Model):
     cant_administrativos = models.IntegerField()
     # CONTACTOS
     contacto = models.OneToOneField(Contacto)
+    # USUARIOS
+    # user = models.ForeignKey(User)
